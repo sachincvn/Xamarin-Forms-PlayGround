@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.1.0" />
     <PackageReference Include="MvvmCross" Version="8.0.2" />
     <PackageReference Include="MvvmCross.Forms" Version="8.0.2" />
     <PackageReference Include="Plugin.AudioRecorder" Version="1.1.0" />
@@ -27,7 +26,6 @@
     <PackageReference Include="Xamarin.Forms.Maps" Version="5.0.0.2125" />
     <PackageReference Include="Xamarin.Forms.Skeleton" Version="2.0.0" />
     <PackageReference Include="Xamarin.Plugin.SharedTransitions" Version="2.4.0" />
-    <PackageReference Include="XForms.Plugin.AnimationNavigationPage" Version="1.0.8" />
   </ItemGroup>
   
   <ItemGroup>
@@ -53,9 +51,6 @@
     <EmbeddedResource Update="Pages\MenuPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\MyNewPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="Pages\RootPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -72,6 +67,9 @@
       <Generator>MSBuild:Compile</Generator>
     </None>
     <None Update="Pages\MenuPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Pages\MyNewPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
     <None Update="Pages\RootPage.xaml">

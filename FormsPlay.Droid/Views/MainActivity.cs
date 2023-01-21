@@ -29,8 +29,6 @@ namespace FormsPlay.Droid
 
             base.OnCreate(bundle);
             CrossMediaManager.Current.Init(this);
-            FormsControls.Droid.Main.Init(this);
-
             App.Density = Resources.DisplayMetrics.Density;
             App.ScreenHeight = (int)(Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density);
             App.ScreenWidth = (int)(Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density);

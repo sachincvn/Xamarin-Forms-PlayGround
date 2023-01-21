@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.1.0" />
     <PackageReference Include="MvvmCross" Version="8.0.2" />
     <PackageReference Include="Plugin.AudioRecorder" Version="1.1.0" />
     <PackageReference Include="Plugin.MediaManager" Version="1.1.1" />
@@ -16,7 +15,6 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
     <PackageReference Include="Xamarin.FFImageLoading.Svg" Version="2.4.11.982" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2125" />
-    <PackageReference Include="XForms.Plugin.AnimationNavigationPage" Version="1.0.8" />
   </ItemGroup>
 
 </Project>

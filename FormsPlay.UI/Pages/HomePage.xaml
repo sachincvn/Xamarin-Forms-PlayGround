@@ -20,21 +20,11 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition x:Name="DefaultActionBar" Height="90" />
-                <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Button Command="{Binding NavigateCommand}"  Text="Click Here"/>
-
-            <controls:ParallaxListView
-                x:Name="listView"
-                Grid.Row="1"
-                Grid.RowSpan="2"
-                BackgroundColor="Transparent"
-                HasUnevenRows="True"
-                ScrollChanged="ListView_OnScrollChanged"
-                SelectionChanged="ListView_OnSelectionChanged"
-                SeparatorVisibility="None">
+            <controls:ParallaxListView x:Name="listView" Grid.Row="0" Grid.RowSpan="2" BackgroundColor="Transparent"
+                HasUnevenRows="True" ScrollChanged="ListView_OnScrollChanged" SelectionChanged="ListView_OnSelectionChanged" SeparatorVisibility="None">
 
                 <controls:ParallaxListView.Content>
                     <Frame Padding="0" HeightRequest="42">
@@ -43,60 +33,24 @@
                 </controls:ParallaxListView.Content>
 
                 <controls:ParallaxListView.Header>
-
                     <Grid HeightRequest="280">
-
                         <Image x:Name="HeaderImage" Source="afternoon.png" Grid.RowSpan="3" Aspect="Fill"/>
-
-
                     </Grid>
-                    
                 </controls:ParallaxListView.Header>
             </controls:ParallaxListView>
 
-            <Grid Grid.Row="1"
-            x:Name="ActionBar"
-            Padding="0,0,0,20"
-            IsClippedToBounds="True"
-            IsVisible="false"
-            RowSpacing="0">
-
+            <Grid x:Name="ActionBar" Padding="0,0,0,20" IsClippedToBounds="True" IsVisible="false" RowSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition x:Name="iOSSafeAreaTitle" Height="0" />
                     <RowDefinition Height="50" />
                     <RowDefinition Height="20" />
                 </Grid.RowDefinitions>
 
-                <gradient:SfGradientView Grid.RowSpan="3" />
+                <StackLayout Grid.Row="1" HorizontalOptions="End" Orientation="Horizontal" Spacing="0">
+                    <Button FontSize="18" Text="L &#xe753;" VerticalOptions="Start" />
 
-
-                <Frame Grid.Row="1" Padding="0" VerticalOptions="CenterAndExpand" Margin="25" HorizontalOptions="Start" BorderColor="Yellow">
-                    
-                </Frame>
-
-                <StackLayout
-                Grid.Row="1"
-                HorizontalOptions="End"
-                Orientation="Horizontal"
-                Spacing="0">
-                    <Button
-                    FontSize="18"
-                    Text="L &#xe753;"
-                    VerticalOptions="Start" />
-
-                    <Button
-                    FontSize="18"
-                        Text="Hello"
-                    VerticalOptions="CenterAndExpand" />
+                    <Button FontSize="18" Text="Hello" VerticalOptions="CenterAndExpand" />
                 </StackLayout>
-
-                <Frame
-                Grid.Row="2"
-                Padding="0"
-                BackgroundColor="{DynamicResource Gray-Bg}"
-                CornerRadius="{OnPlatform 20,
-                                          iOS=10}"
-                HasShadow="False" />
 
             </Grid>
 

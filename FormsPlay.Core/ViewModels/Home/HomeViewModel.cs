@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows.Input;
-using FormsControls.Base;
 using FormsPlay.Core.Services;
 using MvvmCross;
 using MvvmCross.Commands;

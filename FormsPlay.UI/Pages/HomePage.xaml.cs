@@ -11,7 +11,6 @@ using Xamarin.Forms.Xaml;
 using MvvmCross.Binding.Extensions;
 using System.Collections.ObjectModel;
 using FormsPlay.UI.Controls;
-using FormsControls.Base;
 
 namespace FormsPlay.UI.Pages
 {
@@ -47,13 +46,6 @@ namespace FormsPlay.UI.Pages
 
         private ObservableCollection<string> _itemsCollection;
         public ObservableCollection<string> ItemsCollection { get => _itemsCollection; set { _itemsCollection = value; } }
-        
-        private readonly IPageAnimation _animation;
-
-        public HomePage(IPageAnimation animation)
-        {
-            _animation = animation;
-        }
         public HomePage()
         {
             InitializeComponent();
